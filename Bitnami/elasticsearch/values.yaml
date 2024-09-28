@@ -2771,14 +2771,3 @@ kibana:
         # default in the elasticsearch chart is elastic
         kibanaUsername: "username"
         kibanaPassword: "password"
-  ingress:
-    enabled: true
-    className: "nginx"
-    pathtype: ImplementationSpecific
-    annotations: 
-      kubernetes.io/ingress.class: nginx
-    # kubernetes.io/tls-acme: "true"
-    hosts:
-      - host: kibana-example.local
-        paths:
-          - path: /
