@@ -2775,8 +2775,8 @@ kibana:
     enabled: true
     className: "nginx"
     pathtype: ImplementationSpecific
-    annotations: {}
-     kubernetes.io/ingress.class: nginx
+    annotations: 
+      kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
     hosts:
       - host: kibana-example.local
