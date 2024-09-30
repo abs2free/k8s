@@ -1,0 +1,20 @@
+## simple demo timeserver
+```sh
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: timeserver
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      pod: timeserver-pod
+  template:
+    metadata:
+      labels:
+        pod: timeserver-pod
+    spec:
+      containers:
+      - name: timeserver-container
+        image: docker.io/wdenniss/timeserver:1
+```
