@@ -1,3 +1,5 @@
 storage
 *.swp
 resources
+**/.DS_Store
+

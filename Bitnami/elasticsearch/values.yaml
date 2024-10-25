@@ -2767,7 +2767,7 @@ kibana:
     port: '{{ include "elasticsearch.service.ports.restAPI" . }}'
     security:
       auth:
-        enabled: true
+        enabled: false
         # default in the elasticsearch chart is elastic
         kibanaUsername: "username"
         kibanaPassword: "password"
