@@ -8,4 +8,4 @@ spec:
   resources:
     requests:
       storage: 1Gi
-  storageClassName: local-path # 使用默认的storageClass
+  storageClassName: local-storage # 使用默认的storageClass
